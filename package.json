@@ -6,7 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "oxlint",
+    "lint:js": "oxlint",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:md": "markdownlint-cli2 \"**/*.md\"",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:md",
+    "format": "prettier . --write",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -21,8 +25,14 @@
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",
     "@vitejs/plugin-react": "^6.1.1",
+    "autoprefixer": "^10.4.21",
     "babel-plugin-react-compiler": "^1.0.0",
+    "markdownlint-cli2": "^0.18.1",
     "oxlint": "^1.81.0",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "stylelint": "^16.23.1",
+    "stylelint-config-standard": "^39.0.0",
     "typescript": "~6.0.2",
     "vite": "^8.3.0"
   }
