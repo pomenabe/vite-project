@@ -1,0 +1,6 @@
+{
+  "extends": ["markuplint:recommended"],
+  "rules": {
+    "performance/head-element-order": false
+  }
+}
