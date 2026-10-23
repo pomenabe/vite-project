@@ -1,4 +1,5 @@
 import { Header } from './components/header/Header'
+import { MainVisual } from './components/main-visual/MainVisual'
 
 const navigationItems = [
   {
@@ -12,7 +13,12 @@ const navigationItems = [
 ]
 
 function App() {
-  return <Header title="XeoryExtension" navigationItems={navigationItems} />
+  return (
+    <>
+      <Header title="XeoryExtension" navigationItems={navigationItems} />
+      <MainVisual />
+    </>
+  )
 }
 
 export default App
