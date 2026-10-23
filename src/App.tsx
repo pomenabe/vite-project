@@ -1,6 +1,7 @@
 import { Header } from './components/header/Header'
 import { MainVisual } from './components/main-visual/MainVisual'
 import { PopularArticles } from './components/popular-articles/PopularArticles'
+import { RecentArticles } from './components/recent-articles/RecentArticles'
 
 const navigationItems = [
   {
@@ -20,6 +21,7 @@ function App() {
       <main>
         <MainVisual />
         <PopularArticles />
+        <RecentArticles />
       </main>
     </>
   )

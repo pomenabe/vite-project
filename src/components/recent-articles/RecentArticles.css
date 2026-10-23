@@ -1,0 +1,16 @@
+.recent-articles {
+  padding: 0 0 40px;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+  color: #241913;
+}
+
+.recent-articles .article-section-heading {
+  border-top: 1px solid #e5e5e5;
+}
+
+@media (max-width: 767px) {
+  .recent-articles {
+    padding-bottom: 24px;
+  }
+}
