@@ -1,5 +1,6 @@
 import { Header } from './components/header/Header'
 import { MainVisual } from './components/main-visual/MainVisual'
+import { PopularArticles } from './components/popular-articles/PopularArticles'
 
 const navigationItems = [
   {
@@ -16,7 +17,10 @@ function App() {
   return (
     <>
       <Header title="XeoryExtension" navigationItems={navigationItems} />
-      <MainVisual />
+      <main>
+        <MainVisual />
+        <PopularArticles />
+      </main>
     </>
   )
 }

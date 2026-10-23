@@ -2,7 +2,7 @@ import './MainVisual.css'
 
 export function MainVisual() {
   return (
-    <main aria-labelledby="main-visual-title" className="main-visual">
+    <section aria-labelledby="main-visual-title" className="main-visual">
       <h2 className="main-visual-title" id="main-visual-title">
         Xeory Extension
       </h2>
@@ -11,6 +11,6 @@ export function MainVisual() {
         ユーザーに対して重要なコンテンツを効率的に届けられるようにデザインされています。
         5種類のカラーバリエーションを用意しています。
       </p>
-    </main>
+    </section>
   )
 }
