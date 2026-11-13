@@ -1,7 +1,11 @@
 import { Header } from './components/header/Header'
 import { MainVisual } from './components/main-visual/MainVisual'
-import { PopularArticles } from './components/popular-articles/PopularArticles'
-import { RecentArticles } from './components/recent-articles/RecentArticles'
+import { popularArticles, recentArticles } from './components/article-list/articles'
+import {
+  PopularArticlesIcon,
+  RecentArticlesIcon,
+} from './components/article-section/ArticleSectionIcons'
+import { ArticleSection } from './components/article-section/ArticleSection'
 
 const navigationItems = [
   {
@@ -20,8 +24,21 @@ function App() {
       <Header title="XeoryExtension" navigationItems={navigationItems} />
       <main>
         <MainVisual />
-        <PopularArticles />
-        <RecentArticles />
+        <ArticleSection
+          articles={popularArticles}
+          className="popular-articles"
+          icon={<PopularArticlesIcon />}
+          showRank
+          title="人気のある記事"
+          titleId="popular-articles-title"
+        />
+        <ArticleSection
+          articles={recentArticles}
+          className="recent-articles"
+          icon={<RecentArticlesIcon />}
+          title="最近の投稿"
+          titleId="recent-articles-title"
+        />
       </main>
     </>
   )

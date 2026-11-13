@@ -1,8 +1,15 @@
-.recent-articles {
-  padding: 0 0 40px;
+.article-section {
   border-bottom: 1px solid #e5e5e5;
   background-color: #fff;
   color: #241913;
+}
+
+.popular-articles {
+  padding: 52px 0 40px;
+}
+
+.recent-articles {
+  padding: 0 0 40px;
 }
 
 .recent-articles .article-section-heading {
@@ -10,6 +17,10 @@
 }
 
 @media (max-width: 767px) {
+  .popular-articles {
+    padding: 24px 0;
+  }
+
   .recent-articles {
     padding-bottom: 24px;
   }
