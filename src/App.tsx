@@ -1,6 +1,7 @@
 import { Header } from './components/header/Header'
 import { MainVisual } from './components/main-visual/MainVisual'
 import { popularArticles, recentArticles } from './components/article-list/articles'
+import { FeaturesSection } from './components/features-section/FeaturesSection'
 import {
   PopularArticlesIcon,
   RecentArticlesIcon,
@@ -39,6 +40,7 @@ function App() {
           title="最近の投稿"
           titleId="recent-articles-title"
         />
+        <FeaturesSection />
       </main>
     </>
   )
