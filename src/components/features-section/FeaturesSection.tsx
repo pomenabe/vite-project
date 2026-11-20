@@ -1,3 +1,4 @@
+import { SectionHeading } from '../section-heading/SectionHeading'
 import './FeaturesSection.css'
 
 const extensionDownloadUrl = 'https://xeory.jp/template/xeory-extension/'
@@ -91,18 +92,16 @@ function FeatureArtwork({ kind }: { kind: FeatureArtworkKind }) {
 export function FeaturesSection() {
   return (
     <section aria-labelledby="features-section-title" className="features-section">
-      <header className="features-section-heading">
-        <svg
-          aria-hidden="true"
-          className="features-section-icon"
-          viewBox="0 0 20 20"
-        >
-          <path d="m4 10 4 4 8-8" />
-        </svg>
-        <h2 id="features-section-title">XeoryExtensionの特徴</h2>
-        <p>feature</p>
-        <span aria-hidden="true" className="features-section-caret" />
-      </header>
+      <SectionHeading
+        icon={
+          <svg viewBox="0 0 20 20">
+            <path d="m4 10 4 4 8-8" />
+          </svg>
+        }
+        title="XeoryExtensionの特徴"
+        titleId="features-section-title"
+        eyebrow="feature"
+      />
 
       <div className="features-section-list">
         {features.map((feature, index) => (
