@@ -1,12 +1,16 @@
 import { Header } from './components/header/Header'
 import { MainVisual } from './components/main-visual/MainVisual'
-import { popularArticles, recentArticles } from './components/article-list/articles'
+import {
+  popularArticles,
+  recentArticles,
+} from './components/article-list/articles'
 import { FeaturesSection } from './components/features-section/FeaturesSection'
 import {
   PopularArticlesIcon,
   RecentArticlesIcon,
 } from './components/article-section/ArticleSectionIcons'
 import { ArticleSection } from './components/article-section/ArticleSection'
+import { ServiceSection } from './components/service-section/ServiceSection'
 
 const navigationItems = [
   {
@@ -41,6 +45,7 @@ function App() {
           titleId="recent-articles-title"
         />
         <FeaturesSection />
+        <ServiceSection />
       </main>
     </>
   )
