@@ -1,4 +1,3 @@
-import { FeatureArtwork } from '../features-section/FeatureArtwork'
 import type { Feature } from '../features-section/features'
 import '../features-section/FeaturesSection.css'
 
@@ -11,6 +10,8 @@ interface FeatureCardProps {
 }
 
 export function FeatureCard({ feature, imageLeft, index }: FeatureCardProps) {
+  const Icon = feature.icon
+
   return (
     <article
       className={`feature-card${imageLeft ? ' feature-card-image-left' : ''}`}
@@ -22,7 +23,9 @@ export function FeatureCard({ feature, imageLeft, index }: FeatureCardProps) {
             <h3>{feature.title}</h3>
             <p className="feature-card-english">{feature.englishTitle}</p>
           </header>
-          <FeatureArtwork kind={feature.artwork} />
+          <div aria-hidden="true" className="feature-visual">
+            <Icon className="feature-icon" />
+          </div>
           <div className="feature-card-description">
             <p>{feature.description}</p>
             <a href={extensionDownloadUrl}>詳しく見る</a>
