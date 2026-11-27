@@ -26,4 +26,12 @@ describe('ArticleListCard', () => {
     expect(image).toHaveAttribute('loading', 'lazy')
     expect(screen.getByText('2025')).toBeInTheDocument()
   })
+
+  it('matches the rendered markup snapshot', () => {
+    const { asFragment } = render(
+      <ArticleListCard article={article} imageLoading="lazy" />,
+    )
+
+    expect(asFragment()).toMatchSnapshot()
+  })
 })

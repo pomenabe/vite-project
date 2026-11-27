@@ -1,0 +1,48 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ArticleListCard > matches the rendered markup snapshot 1`] = `
+<DocumentFragment>
+  <article
+    class="article-list-card"
+  >
+    <a
+      class="article-list-link"
+      href="https://example.com/article"
+    >
+      <div
+        class="article-list-image-wrap"
+      >
+        <img
+          alt="サンプル画像"
+          class="article-list-image"
+          height="533"
+          loading="lazy"
+          src="/article-image.jpg"
+          width="800"
+        />
+        <time
+          class="article-list-date"
+          datetime="2025-03-08"
+        >
+          <span>
+            2025
+          </span>
+          <span>
+            03/08
+          </span>
+        </time>
+      </div>
+      <span
+        class="article-list-category"
+      >
+        お知らせ
+      </span>
+      <h3
+        class="article-list-title"
+      >
+        テスト記事
+      </h3>
+    </a>
+  </article>
+</DocumentFragment>
+`;
