@@ -10,8 +10,6 @@ interface FeatureCardProps {
 }
 
 export function FeatureCard({ feature, imageLeft, index }: FeatureCardProps) {
-  const Icon = feature.icon
-
   return (
     <article
       className={`feature-card${imageLeft ? ' feature-card-image-left' : ''}`}
@@ -24,7 +22,13 @@ export function FeatureCard({ feature, imageLeft, index }: FeatureCardProps) {
             <p className="feature-card-english">{feature.englishTitle}</p>
           </header>
           <div aria-hidden="true" className="feature-visual">
-            <Icon className="feature-icon" />
+            <img
+              alt=""
+              className="feature-icon"
+              height="64"
+              src={feature.image}
+              width="64"
+            />
           </div>
           <div className="feature-card-description">
             <p>{feature.description}</p>
